@@ -13,6 +13,9 @@
 		11F710451C9E0E3E0036405E /* recipez_v2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11F710431C9E0E3E0036405E /* recipez_v2.xcdatamodeld */; };
 		11F710471C9E0E3E0036405E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F710461C9E0E3E0036405E /* Assets.xcassets */; };
 		11F7104A1C9E0E3E0036405E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F710481C9E0E3E0036405E /* LaunchScreen.storyboard */; };
+		11F710561C9E170B0036405E /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F710541C9E170B0036405E /* Recipe+CoreDataProperties.swift */; };
+		11F710571C9E170B0036405E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F710551C9E170B0036405E /* Recipe.swift */; };
+		11F710591C9E19E10036405E /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F710581C9E19E10036405E /* RecipeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		11F710461C9E0E3E0036405E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11F710491C9E0E3E0036405E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11F7104B1C9E0E3E0036405E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F710541C9E170B0036405E /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		11F710551C9E170B0036405E /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		11F710581C9E19E10036405E /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,42 @@
 		11F7103B1C9E0E3E0036405E /* recipez-v2 */ = {
 			isa = PBXGroup;
 			children = (
+				11F710511C9E16760036405E /* Model */,
+				11F710521C9E16830036405E /* View */,
+				11F710531C9E16930036405E /* Conroller */,
 				11F7103C1C9E0E3E0036405E /* AppDelegate.swift */,
-				11F7103E1C9E0E3E0036405E /* ViewController.swift */,
 				11F710401C9E0E3E0036405E /* Main.storyboard */,
-				11F710461C9E0E3E0036405E /* Assets.xcassets */,
 				11F710481C9E0E3E0036405E /* LaunchScreen.storyboard */,
+				11F710461C9E0E3E0036405E /* Assets.xcassets */,
 				11F7104B1C9E0E3E0036405E /* Info.plist */,
 				11F710431C9E0E3E0036405E /* recipez_v2.xcdatamodeld */,
 			);
 			path = "recipez-v2";
+			sourceTree = "<group>";
+		};
+		11F710511C9E16760036405E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11F710541C9E170B0036405E /* Recipe+CoreDataProperties.swift */,
+				11F710551C9E170B0036405E /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		11F710521C9E16830036405E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11F710581C9E19E10036405E /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		11F710531C9E16930036405E /* Conroller */ = {
+			isa = PBXGroup;
+			children = (
+				11F7103E1C9E0E3E0036405E /* ViewController.swift */,
+			);
+			name = Conroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +173,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				11F710451C9E0E3E0036405E /* recipez_v2.xcdatamodeld in Sources */,
+				11F710561C9E170B0036405E /* Recipe+CoreDataProperties.swift in Sources */,
 				11F7103F1C9E0E3E0036405E /* ViewController.swift in Sources */,
+				11F710591C9E19E10036405E /* RecipeCell.swift in Sources */,
 				11F7103D1C9E0E3E0036405E /* AppDelegate.swift in Sources */,
+				11F710571C9E170B0036405E /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
