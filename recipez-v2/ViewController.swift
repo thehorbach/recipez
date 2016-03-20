@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     
+    var dontWantToRuinTheStreakPlsForgive = true
+    
     @IBOutlet weak var tableView: UITableView!
     var recipes = [Recipe]()
     
