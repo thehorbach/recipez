@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     var dontWantToRuinTheStreakPlsForgive = true
+    var doYouApologiseAgain = true
     
     @IBOutlet weak var tableView: UITableView!
     var recipes = [Recipe]()
