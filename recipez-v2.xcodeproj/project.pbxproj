@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11BDA7271CA323C000CE261C /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BDA7261CA323C000CE261C /* CreateRecipeVC.swift */; };
 		11F7103D1C9E0E3E0036405E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F7103C1C9E0E3E0036405E /* AppDelegate.swift */; };
 		11F7103F1C9E0E3E0036405E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11F7103E1C9E0E3E0036405E /* ViewController.swift */; };
 		11F710421C9E0E3E0036405E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F710401C9E0E3E0036405E /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11BDA7261CA323C000CE261C /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 		11F710391C9E0E3E0036405E /* recipez-v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "recipez-v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F7103C1C9E0E3E0036405E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11F7103E1C9E0E3E0036405E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				11F7103E1C9E0E3E0036405E /* ViewController.swift */,
+				11BDA7261CA323C000CE261C /* CreateRecipeVC.swift */,
 			);
 			name = Conroller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				11F710561C9E170B0036405E /* Recipe+CoreDataProperties.swift in Sources */,
 				11F7103F1C9E0E3E0036405E /* ViewController.swift in Sources */,
 				11F710591C9E19E10036405E /* RecipeCell.swift in Sources */,
+				11BDA7271CA323C000CE261C /* CreateRecipeVC.swift in Sources */,
 				11F7103D1C9E0E3E0036405E /* AppDelegate.swift in Sources */,
 				11F710571C9E170B0036405E /* Recipe.swift in Sources */,
 			);
@@ -327,6 +331,7 @@
 				11F710501C9E0E3E0036405E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

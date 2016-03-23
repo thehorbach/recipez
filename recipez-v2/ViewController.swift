@@ -7,14 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
-    var dontWantToRuinTheStreakPlsForgive = true
-    var doYouApologiseAgain = true
-    var tommorrowIAmCodingForSure = true
-    
     @IBOutlet weak var tableView: UITableView!
     var recipes = [Recipe]()
     
@@ -24,6 +20,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        fetchAndResults()
+        tableView.reloadData()
+    }
+    
+    func fetchAndResults() {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        let fetchResults = NSFetchRequest(entityName: "Recipe")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchResults)
+            self.recipes = results as! [Recipe]
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
